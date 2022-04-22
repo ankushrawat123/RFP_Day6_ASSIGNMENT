@@ -64,6 +64,13 @@ switch (Option)
         UtilDay obj7 = new UtilDay();
         obj7.dayOfWeek(D, M, Y);
         break;
-     
+    case 8:
+        Console.WriteLine("\nWelcome to Program for Fahrenheit - Celcius ............................");
+        Console.WriteLine("Enter 0 for CELCIUS to FAHRENHEIT CONVERSION & Enter 1 for FAHRENHEIT to CELCIUS CONVERSION ");
+        int Num4 = Convert.ToInt32(Console.ReadLine());
+        Util obj8 = new Util();
+        obj8.TemperaturConversion(Num4);
+        break;
+
 }
 
