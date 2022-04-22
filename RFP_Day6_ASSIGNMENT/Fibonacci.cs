@@ -10,7 +10,7 @@ namespace RFP_Day6_ASSIGNMENT
     {
         public void fibonacciMethod(int Input)
         {
-            
+        
             int Num1 = 0, Num2 = 1,Num3;
             Console.Write(Num1 + " " + Num2 + " " );
             for(int i = 2; i < Input; i++)
