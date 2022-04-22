@@ -2,7 +2,7 @@
 using RFP_Day6_ASSIGNMENT;
 
 int Option;
-Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n 2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM");
+Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n 2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM\n 5 for STOPWATCH PROGRAM");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -38,6 +38,10 @@ switch (Option)
         ReverseNumber obj4 = new ReverseNumber();
         obj4.Reverse(Num3, Rev);
         break;
-
+    case 5:
+        Console.WriteLine(" \n Welcome to STOPWATCH Program ...........................");
+        StopWatch obj5 = new StopWatch();
+        obj5.stopWatchMethod();
+        break;
 }
 
