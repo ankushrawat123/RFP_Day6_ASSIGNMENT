@@ -2,7 +2,7 @@
 using RFP_Day6_ASSIGNMENT;
 
 int Option;
-Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n 2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM\n 5 for STOPWATCH PROGRAM\n 6 for VENDING MACHINE PROGRAM");
+Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n 2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM\n 5 for STOPWATCH PROGRAM\n 6 for VENDING MACHINE PROGRAM\n 7 for DAY OF WEEK PROGRAM\n ");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -53,6 +53,17 @@ switch (Option)
         VendingMachine obj6 = new VendingMachine();
         Console.WriteLine("Minimum Notes required is " + obj6.minNotes(Notes, m, V));
         break;
-    
+    case 7:
+        Console.WriteLine(" \n Welcome to DAY NAME Program .....................................");
+        Console.WriteLine("Enter the Day Number");
+        int D = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter the month in number");
+        int M = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter the Year");
+        int Y = Convert.ToInt32(Console.ReadLine());
+        UtilDay obj7 = new UtilDay();
+        obj7.dayOfWeek(D, M, Y);
+        break;
+     
 }
 
