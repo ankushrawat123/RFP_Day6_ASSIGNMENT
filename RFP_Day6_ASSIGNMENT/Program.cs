@@ -2,7 +2,7 @@
 using RFP_Day6_ASSIGNMENT;
 
 int Option;
-Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n 2 for PERFECT NUMBER PROGRAM ");
+Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n 2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -21,6 +21,14 @@ switch (Option)
         int Num = Convert.ToInt32(Console.ReadLine());
         PerfectNum obj2 = new PerfectNum();
         obj2.perfectNumMethod(Factor, Num);
+        break;
+    case 3:
+        int Count = 0;
+        Console.WriteLine("\nWelcome to Program for Prime Factors ...........................");
+        Console.WriteLine("Enter any number to check whether entered value is prime or not and What are the prime Factors if number is not prime number");
+        int Num2 = Convert.ToInt32(Console.ReadLine());
+        PrimeNumber obj3 = new PrimeNumber();
+        obj3.PrimeNunberMethod(Num2, Count);
         break;
 }
 
