@@ -2,7 +2,7 @@
 using RFP_Day6_ASSIGNMENT;
 
 int Option;
-Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM\n 5 for STOPWATCH PROGRAM\n 6 for VENDING MACHINE PROGRAM\n 7 for DAY OF WEEK PROGRAM \n8 for TEMPERATURE CONVERSION PROGRAM \n 9 for SQUARE ROOT PROGRAM");
+Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM\n 5 for STOPWATCH PROGRAM\n 6 for VENDING MACHINE PROGRAM\n 7 for DAY OF WEEK PROGRAM \n8 for TEMPERATURE CONVERSION PROGRAM \n 9 for SQUARE ROOT PROGRAM \n 10 for DECIMAL TO BINARY CONVERSION PROGRAM");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -22,6 +22,7 @@ switch (Option)
         PerfectNum obj2 = new PerfectNum();
         obj2.perfectNumMethod(Factor, Num);
         break;
+
     case 3:
         int Count = 0;
         Console.WriteLine("\nWelcome to Program for Prime Factors ...........................");
@@ -30,6 +31,7 @@ switch (Option)
         PrimeNumber obj3 = new PrimeNumber();
         obj3.PrimeNunberMethod(Num2, Count);
         break;
+
     case 4:
         int Rev = 0;
         Console.WriteLine(" \n Welcome to Reverse Number Program ............................");
@@ -38,11 +40,13 @@ switch (Option)
         ReverseNumber obj4 = new ReverseNumber();
         obj4.Reverse(Num3, Rev);
         break;
+
     case 5:
         Console.WriteLine(" \n Welcome to STOPWATCH Program ...........................");
         StopWatch obj5 = new StopWatch();
         obj5.stopWatchMethod();
         break;
+
     case 6:
         Console.WriteLine(" \n Welcome to VENDING MACHINE PrograM ..................................");
         Console.WriteLine("1, 2, 5, 10, 50, 100, 500 and 1000 Rs Notes can be returned by Vending Machine.");
@@ -53,6 +57,7 @@ switch (Option)
         VendingMachine obj6 = new VendingMachine();
         Console.WriteLine("Minimum Notes required is " + obj6.minNotes(Notes, m, V));
         break;
+
     case 7:
         Console.WriteLine(" \n Welcome to DAY NAME Program .....................................");
         Console.WriteLine("Enter the Day Number");
@@ -64,6 +69,7 @@ switch (Option)
         UtilDay obj7 = new UtilDay();
         obj7.dayOfWeek(D, M, Y);
         break;
+
     case 8:
         Console.WriteLine("\nWelcome to Program for Fahrenheit - Celcius ............................");
         Console.WriteLine("Enter 0 for CELCIUS to FAHRENHEIT CONVERSION & Enter 1 for FAHRENHEIT to CELCIUS CONVERSION ");
@@ -71,6 +77,7 @@ switch (Option)
         Util obj8 = new Util();
         obj8.TemperaturConversion(Num4);
         break;
+
     case 9:
         int Count3 = 0;
         Console.WriteLine(" \n Welcome to Sqrt Program using Newtons Method ...........................");
@@ -78,6 +85,13 @@ switch (Option)
         double Num5 = Convert.ToInt32(Console.ReadLine()); //input number
         SqrtNewtonMethod obj9 = new SqrtNewtonMethod();
         obj9.Sqrt(Count3, Num5);
+        break;
+
+    case 10:
+        Console.WriteLine(" \n Welcome to DECIMAIL TO BINARY CONVERSION Program ...........................");
+        Console.WriteLine("Enter any number for decimal to Binary conversion");
+        int decimalNumber = Convert.ToInt32(Console.ReadLine());
+        Binary.toBinary(decimalNumber);
         break;
 }
 
