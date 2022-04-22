@@ -2,7 +2,7 @@
 using RFP_Day6_ASSIGNMENT;
 
 int Option;
-Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n 2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM\n 5 for STOPWATCH PROGRAM");
+Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n 2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM\n 5 for STOPWATCH PROGRAM\n 6 for VENDING MACHINE PROGRAM");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -43,5 +43,16 @@ switch (Option)
         StopWatch obj5 = new StopWatch();
         obj5.stopWatchMethod();
         break;
+    case 6:
+        Console.WriteLine(" \n Welcome to VENDING MACHINE PrograM ..................................");
+        Console.WriteLine("1, 2, 5, 10, 50, 100, 500 and 1000 Rs Notes can be returned by Vending Machine.");
+        Console.WriteLine("Enter the Change amount that you want ");
+        int V = Convert.ToInt32(Console.ReadLine());
+        int[] Notes = { 1000, 500, 100, 50, 10, 5, 2, 1 };
+        int m = Notes.Length;
+        VendingMachine obj6 = new VendingMachine();
+        Console.WriteLine("Minimum Notes required is " + obj6.minNotes(Notes, m, V));
+        break;
+    
 }
 
