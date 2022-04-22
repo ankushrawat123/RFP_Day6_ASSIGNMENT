@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFP_Day6_ASSIGNMENT", "RFP_Day6_ASSIGNMENT\RFP_Day6_ASSIGNMENT.csproj", "{CD6035D7-8DBA-4337-8BBA-FB2AF5E59E4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD6035D7-8DBA-4337-8BBA-FB2AF5E59E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6035D7-8DBA-4337-8BBA-FB2AF5E59E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6035D7-8DBA-4337-8BBA-FB2AF5E59E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6035D7-8DBA-4337-8BBA-FB2AF5E59E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A9DA4B4-4060-4DFF-9C1B-97208DE53B73}
+	EndGlobalSection
+EndGlobal
