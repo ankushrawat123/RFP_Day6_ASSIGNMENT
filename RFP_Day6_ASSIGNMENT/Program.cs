@@ -2,7 +2,7 @@
 using RFP_Day6_ASSIGNMENT;
 
 int Option;
-Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM\n 5 for STOPWATCH PROGRAM\n 6 for VENDING MACHINE PROGRAM\n 7 for DAY OF WEEK PROGRAM \n8 for TEMPERATURE CONVERSION PROGRAM ");
+Console.WriteLine("Enter \n 1 for FIBONACCI SERIES PROGRAM \n2 for PERFECT NUMBER PROGRAM \n 3 for PRIME NUMBER PROGRAM \n 4 for REVERSE NUMBER PROGRAM\n 5 for STOPWATCH PROGRAM\n 6 for VENDING MACHINE PROGRAM\n 7 for DAY OF WEEK PROGRAM \n8 for TEMPERATURE CONVERSION PROGRAM \n 9 for SQUARE ROOT PROGRAM");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -71,6 +71,13 @@ switch (Option)
         Util obj8 = new Util();
         obj8.TemperaturConversion(Num4);
         break;
-
+    case 9:
+        int Count3 = 0;
+        Console.WriteLine(" \n Welcome to Sqrt Program using Newtons Method ...........................");
+        Console.WriteLine("Enter any number to get it's SQUAREROOT ");
+        double Num5 = Convert.ToInt32(Console.ReadLine()); //input number
+        SqrtNewtonMethod obj9 = new SqrtNewtonMethod();
+        obj9.Sqrt(Count3, Num5);
+        break;
 }
 
